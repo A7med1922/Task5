@@ -1,0 +1,194 @@
+* 
+{
+    padding: 0px;
+    box-sizing: border-box;
+    margin: 0px;
+    
+}
+
+header
+{
+    background-image: url(background2.jpg);
+    background-size: 100% 100%;
+    height: 500px;
+}
+nav
+{
+    background-color:#1a022d;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    opacity: 0.6;
+
+}
+nav img
+{
+    
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;   
+}
+
+nav ul li a 
+{
+    text-decoration: none;
+    color: white;
+}
+
+nav ul
+{
+    display: flex;
+    gap: 100px;
+    padding: 30px;
+}
+nav ul li 
+{
+    text-decoration: none;
+    list-style: none;
+    text-align: center;
+    font-family: fantasy;
+
+}
+header .information
+{
+    color: white;
+    text-align: center;
+    margin-top: 100px;
+}
+header .information pre
+{
+    font-family: fantasy;
+    font-size: 30px;
+    color: blue;
+}
+header .information pre::first-line
+{
+    color: white;
+    font-size: medium;
+    letter-spacing: 9px;
+    font-family: auto;
+}
+{
+
+}
+
+header .information  a
+{
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+    /* width: 21%;
+    height: 5vh; */
+    margin-left: 30px;
+    padding: 10px 30px;
+    border: 1px solid white;  
+}
+
+header .information  a:nth-child(2n)
+{
+    background-color: red;
+}
+header .information  a:hover
+{
+    background-color: rgb(4, 4, 78);
+}
+section
+{
+    background-color: #250444;
+    padding: 10px 0px ;
+}
+section .photos
+{  padding: 40px;
+    /* background-color: blueviolet; */
+    background-image: linear-gradient( darkgreen 1%, black 20%, darkblue 40%, black 60%, darkred 80%, black 99% );
+    width: 98%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 50px;
+    align-items: center;
+    justify-items: center;
+    /* grid-template-areas: "head nav nav sec Sec"
+                         "head sara sara sara saka"; */
+}
+section .photos img
+{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+section .photos img:nth-child(1)
+{
+    grid-column: 1/2;
+    grid-row: 1/span 2;
+    /* grid-area: head; */
+    border: 2px solid;
+    transition: 6s;
+    filter: grayscale(100%);
+}
+section .photos img:nth-child(1):hover
+{
+    filter: grayscale(0);
+}
+section .photos img:nth-child(2)
+{
+    grid-column: 2/3;
+    grid-row: 1/span 1;
+    /* grid-area: nav; */
+}
+section .photos img:nth-child(3)
+{
+    grid-column: 3/3;
+    grid-row: 1/span 1;
+    /* grid-area: sec; */
+}
+section .photos img:nth-child(4)
+{
+    grid-column: 2/4;
+    grid-row: 2/span 2;
+    /* grid-area: Sec; */
+}
+section .photos img:nth-child(5)
+{
+    
+    /* grid-area: sara; */
+}
+section .photos img:nth-child(6)
+{
+   
+    /* grid-area: saka; */
+}
+
+section .photos img:nth-child(4)
+{
+    filter: blur(2px);
+}
+section .photos img:nth-child(4):hover
+{
+    filter: blur(0px);
+}
+section .photos img:nth-child(6)
+{
+    
+}
+section .photos img:nth-child(6):hover
+{
+    filter: blur(0px);
+}
+
+footer
+{
+    background-color: rgb(11, 1, 21);
+    color: aliceblue;
+    text-align: center;
+    padding: 15px;
+    font-family: 'Parisienne', cursive;
+
+}
